@@ -1,0 +1,315 @@
+<template name="listJob">
+	<div class="container">
+		<div class="well well-defined">
+			<form role="form" class="listJobForm">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">JOB DESCRIPTION</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+								<div class="form-group text-left">
+									<label>Job Title *</label>
+									<input type="text" class="form-control" name="jobTitle" required>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+								<div class="form-group text-left">
+									<label>Select Your Industry *</label>
+									<select type="text" class="form-control" name="industryType" required>
+										<option selected="selected" disabled>Select one...</option>
+										<option value="accounts">Accounts/Finance</option>
+										<option value="admin-office">Admin/Office</option>
+										<option value="education">Education/Teaching</option>
+										<option value="food-beverage">Food/Beverages</option>
+										<option value="human-resource">Human Resource</option>
+										<option value="science-bio">Science/Biotech</option>
+										<option value="web">Web Design/Development</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+								<div class="form-group text-left">
+									<label>Job Location *</label>
+									<input type="text" class="form-control" name="jobLocation" required>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+								<div class="form-group text-left">
+									<label>Employment Type *</label>
+									<select name="employmentType" class="form-control">
+										<option selected="selected" disabled>Select one...</option>
+										<option value="full-time">Full Time</option>
+										<option value="part-time">Part Time</option>
+										<option value="full-part">Full Time / Part Time</option>
+										<option value="temporary">Temporary / Seasonal</option>
+										<option value="contract">Contract</option>
+										<option value="exempt">Exempt</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group text-left">
+									<label>Job Description *</label>
+									<textarea name="jobDesc" rows="5" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group text-left">
+									<label>Team Culture / About Us</label>
+									<textarea name="aboutCompany" rows="5" class="form-control"></textarea>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">COMPENSATION</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<div class="form-group text-left">
+									<label>Compensation *</label>
+					                <div class="icon-addon">
+					                    <input type="text" class="form-control" name="compensationAmt" id="compAmount">
+					                    <label for="compAmount" class="glyphicon glyphicon-usd" rel="tooltip" title="email"></label>
+					                </div>
+					            </div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<div class="form-group text-left">
+				                    <select name="compensationType" class="form-control compensation">
+										<option selected="selected" disabled>Select one...</option>
+										<option value="hourly">Hourly</option>
+										<option value="shift">Shift</option>
+										<option value="daily">Daily</option>
+										<option value="weekly">Weekly</option>
+										<option value="salary">Salary</option>
+										<option value="piece-rate">Piece rate</option>
+										<option value="comission">Comission</option>
+									</select>
+					            </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+								<label>Additional Compensation</label>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										Bonuses
+									</label>
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										Comission
+									</label>
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										Tips
+									</label>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+								<label>Benefits or Perks</label>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										Health Insurance
+									</label>
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										Dental Insurance
+									</label>
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										Vision Insurance
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">LOCATION</h3>
+					</div>
+					<div class="panel-body text-left">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label>Company Name *</label>
+									<input type="text" class="form-control" name="companyName">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<label>Number of Employees *</label>
+								<div class="range range-primary">
+									<input type="range" name="empRange" min="1" max="100" value="50" onChange="rangePrimary.value=value">
+									<output id="rangePrimary">50</output>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label>Address *</label>
+									<textarea class="form-control" name="officeAddress" rows="5"></textarea>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label>City *</label>
+									<input type="text" name="officeCity" class="form-control">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label>State *</label>
+									<select name="officeState" class="form-control">
+										<option selected="selected" disabled>Select one...</option>
+										<option value="international">(International)</option>
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">District Of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label>Zip Code *</label>
+									<input type="text" name="officeZipCode" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">ADD PHOTOS TO YOUR JOB POST
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-lg-offset-4">
+								<button type="button" class="btn btn-default uploadImage">Upload Images</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="uploadedImages">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">HIRING MANAGERS</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-lg-offset-4">
+								<div class="profile-header-container">   
+						    		<div class="profile-header-img">
+						                <a href type="button" class="uploadProfileImage"><img class="img-circle profileImage" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120"></a>
+						            </div>
+						        </div>
+								<button type="button" class="btn btn-default uploadProfileImage">Add A Photo</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+								<div class="form-group text-left">
+									<label>First Name *</label>
+									<input type="text" name="managerFName" class="form-control">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+								<div class="form-group text-left">
+									<label>Last Name *</label>
+									<input type="text" name="managerLName" class="form-control">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+								<div class="form-group text-left">
+									<label>Designation *</label>
+									<input type="text" name="managerDesignation" class="form-control">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+								<div class="form-group text-left">
+									<label>Phone *</label>
+									<input type="text" name="managerPhone" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</template>
